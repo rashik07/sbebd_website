@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
-
+import logo from '../assets/logo.png';
 const Footer = () => {
   return (
     <footer className="bg-primary text-white pt-20">
@@ -8,7 +8,8 @@ const Footer = () => {
         {/* Brand Column */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-4">
-            <span className="text-2xl font-extrabold bg-accent text-primary w-12 h-12 flex items-center justify-center rounded-lg">SBE</span>
+            {/* <span className="text-2xl font-extrabold bg-accent text-primary w-12 h-12 flex items-center justify-center rounded-lg">SBE</span> */}
+            <img src={logo} alt="Logo" className="w-28 h-20" />
             <div className="flex flex-col">
               <strong className="text-xl leading-tight">S. Brothers Engineering</strong>
             </div>

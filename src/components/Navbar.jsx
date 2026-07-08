@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronRight } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-
+import logo from '../assets/logo.png';
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,7 +39,8 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/95 backdrop-blur-md py-4 shadow-md' : 'bg-transparent py-6'}`}>
       <div className="container flex items-center justify-between">
         <Link to="/" className="flex items-center gap-4 text-white">
-          <span className="text-2xl font-extrabold bg-accent text-primary w-12 h-12 flex items-center justify-center rounded-lg">SBE</span>
+          {/* <span className="text-2xl font-extrabold bg-accent text-primary w-12 h-12 flex items-center justify-center rounded-lg">SBE</span> */}
+          <img src={logo} alt="Logo" className="w-28 h-20" />
           <div className="flex flex-col">
             <strong className="text-xl leading-tight tracking-tight">S. Brothers Engineering</strong>
             <span className="text-xs text-accent uppercase tracking-widest">Industrial Solutions</span>
