@@ -115,6 +115,94 @@ const Products = ({ bgClass = "bg-gray-50", isDarkBg = false }) => {
           "Voltage": "230V / 400V"
         }
       }
+    },
+    //boiler
+    {
+      id: 6,
+      title: "Boiler",
+      category: "Boiler",
+      shortDesc: "High-efficiency steam boiler for industrial needs.",
+      image: "https://energyplusindia.com/wp-content/uploads/2019/01/industrial-boiler-500x500.jpg",
+      details: {
+        description: "Our industrial-grade boilers are designed for continuous duty and maximum reliability. They offer energy-efficient operation and low maintenance requirements, perfect for heavy manufacturing and industrial applications.",
+        features: [
+          "Steam boiler technology for continuous operation",
+          "Energy-saving control systems",
+          "Low noise levels",
+          "Easy maintenance access"
+        ],
+        specifications: {
+          "Power": "15kW - 250kW",
+          "Pressure": "7 - 13 bar",
+          "Capacity": "2.0 - 45 m³/min"
+        }
+      }
+    },
+    //Transformer
+    {
+      id: 7,
+      title: "Transformer",
+      category: "Transformer",
+      shortDesc: "High-efficiency transformer for industrial needs.",
+      image: "https://images.unsplash.com/photo-1509390144018-eeaf65052242?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      details: {
+        description: "Our industrial-grade transformers are designed for continuous duty and maximum reliability. They offer energy-efficient operation and low maintenance requirements, perfect for heavy manufacturing and industrial applications.",
+        features: [
+          "Transformer technology for continuous operation",
+          "Energy-saving control systems",
+          "Low noise levels",
+          "Easy maintenance access"
+        ],
+        specifications: {
+          "Power": "15kW - 250kW",
+          "Pressure": "7 - 13 bar",
+          "Capacity": "2.0 - 45 m³/min"
+        }
+      }
+    },
+    //Busbar Trunking System
+    {
+      id: 8,
+      title: "Busbar Trunking System(BBT)",
+      category: "Busbar Trunking System",
+      shortDesc: "High-efficiency busbar trunking system for industrial needs.",
+      image: "https://alliantenergybd.com/wp-content/uploads/2022/10/busbar-trunking-system-overview-01-1024x957.jpeg",
+      details: {
+        description: "Our industrial-grade busbar trunking system is designed for continuous duty and maximum reliability. They offer energy-efficient operation and low maintenance requirements, perfect for heavy manufacturing and industrial applications.",
+        features: [
+          "Busbar trunking system technology for continuous operation",
+          "Energy-saving control systems",
+          "Low noise levels",
+          "Easy maintenance access"
+        ],
+        specifications: {
+          "Power": "15kW - 250kW",
+          "Pressure": "7 - 13 bar",
+          "Capacity": "2.0 - 45 m³/min"
+        }
+      }
+    },
+    //solar
+    {
+      id: 9,
+      title: "Solar ",
+      category: "Solar ",
+      shortDesc: "High-efficiency solar panel for industrial needs.",
+      image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      details: {
+        description: "Our industrial-grade solar panel is designed for continuous duty and maximum reliability. They offer energy-efficient operation and low maintenance requirements, perfect for heavy manufacturing and industrial applications.",
+        features: [
+          "Solar panel technology for continuous operation",
+          "Energy-saving control systems",
+          "Low noise levels",
+          "Easy maintenance access"
+        ],
+        specifications: {
+          "Power": "15kW - 250kW",
+          "Pressure": "7 - 13 bar",
+          "Capacity": "2.0 - 45 m³/min"
+        }
+      }
     }
   ];
 
@@ -167,7 +255,7 @@ const Products = ({ bgClass = "bg-gray-50", isDarkBg = false }) => {
             className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
             onClick={() => setSelectedProduct(null)}
           ></div>
-          <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto z-10 animate-in fade-in zoom-in-95 duration-200">
+          <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-7xl max-h-[90vh] overflow-y-auto z-10 animate-in fade-in zoom-in-95 duration-200">
             <button
               className="absolute top-4 right-4 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full p-2 transition-colors z-20"
               onClick={() => setSelectedProduct(null)}
@@ -225,11 +313,11 @@ const Products = ({ bgClass = "bg-gray-50", isDarkBg = false }) => {
                   </div>
                 </div>
 
-                <div className="mt-8 pt-6 border-t border-gray-100">
+                {/* <div className="mt-8 pt-6 border-t border-gray-100">
                   <a href="#contact" className="btn btn-primary w-full sm:w-auto text-center" onClick={() => setSelectedProduct(null)}>
                     Request a Quote
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
