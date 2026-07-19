@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { X, ArrowUpRight } from 'lucide-react';
+import { Image } from 'antd';
 import compressor from '../../assets/compressor.png';
 import parts from '../../assets/parts.png';
 import oil from '../../assets/oil.png';
 import lift from '../../assets/lift.png';
 import generator from '../../assets/genarator.png';
-
 
 const Products = ({ bgClass = "bg-gray-50", isDarkBg = false }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -222,7 +222,7 @@ const Products = ({ bgClass = "bg-gray-50", isDarkBg = false }) => {
               onClick={() => setSelectedProduct(product)}
             >
               <div className="relative h-56 overflow-hidden">
-                <img
+                <Image
                   src={product.image}
                   alt={product.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -265,7 +265,7 @@ const Products = ({ bgClass = "bg-gray-50", isDarkBg = false }) => {
 
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-2/5 h-64 md:h-auto relative">
-                <img
+                <Image
                   src={selectedProduct.image}
                   alt={selectedProduct.title}
                   className="w-full h-full object-cover"
